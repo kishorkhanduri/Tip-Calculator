@@ -1,11 +1,8 @@
-let btn = document.getElementById('btn');
-
-btn.addEventListener('click', function(){
-    let billAmount = document.getElementById('bill-amount').value;
-    let tipPercentage = document.getElementById('tip-percentage').value;
-
-    
-    let tipAmount = document.getElementById('tip-amount').value = billAmount / tipPercentage;
-    document.getElementById('total-bill').value = parseFloat(billAmount) + parseFloat(tipAmount);
-
-})
+const tipcalcy = () =>{
+    let amount  = document.getElementById('billamount').value;
+    let perc = document.getElementById('tipperc').value;
+    let tip = perc * (amount/100);
+    let total = tip + Number(amount);
+    document.getElementById('tipamount').value = tip;
+    document.getElementById('totalbilled').value = total;
+}
