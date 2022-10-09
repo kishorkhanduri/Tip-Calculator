@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Tip Calculator</title>
+    <title>Tip calculator</title>
 </head>
-<body>
-    <h1>Tip Calculator</h1>
-    <div id="container">
-        Bill Amount: <input id="bill-amount" type="number">
-        Tip Percentage: <input id="tip-percentage" type="number">
-        Tip Amount: <input id="tip-amount" type="number">
-        Total Bill: <input id="total-bill" type="number">
-        <button id="btn">Calculate</button>
+<body>  
+    <div class="tipc">
+        <h2>TIP CALCULATOR</h2>
+        <label><strong>AMOUNT</strong></label>
+        <input type="number" id="bill-amount" placeholder="ENTER BILL AMOUNT"><br>
+        <label><strong>TIP PERCENT%</strong></label>
+        <input type="number" id="tipperc" placeholder="ENTER TIP PERCENT"><br>
+        <label><strong>TIP AMOUNT</strong></label>
+        <input type="number" id="tipamount" placeholder="TIP AMOUNT" ><br>
+        <label><strong>TOTAL BILLED</strong></label>
+        <input type="number" id="totalbilled" placeholder="TOTAL BILL" ><br>
+        <button onclick="tipcalcy()">CALCULATE</button>
     </div>
     <script src="app.js"></script>
 </body>
